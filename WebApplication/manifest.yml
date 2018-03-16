@@ -1,0 +1,6 @@
+---
+applications:
+- name: NsbWebEndpoint
+  memory: 256m
+  buildpack: dotnet_core_buildpack_203
+  path: PUBLISH

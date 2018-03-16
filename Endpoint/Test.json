@@ -1,0 +1,94 @@
+﻿{
+  "staging_env_json": {},
+  "running_env_json": {},
+  "system_env_json": {
+    "VCAP_SERVICES": {
+      "p-rabbitmq": [
+        {
+          "credentials": {
+            "http_api_uris": [
+              "https://535dc740-67e6-41df-95ac-9cd4f89be463:274kgjks5fi4u6ljp8u4p219bq@pivotal-rabbitmq.sys.pcf1.vc1.pcf.dell.com/api/"
+            ],
+            "ssl": false,
+            "dashboard_url": "https://pivotal-rabbitmq.sys.pcf1.vc1.pcf.dell.com/#/login/535dc740-67e6-41df-95ac-9cd4f89be463/274kgjks5fi4u6ljp8u4p219bq",
+            "password": "274kgjks5fi4u6ljp8u4p219bq",
+            "protocols": {
+              "amqp": {
+                "vhost": "91393775-2784-4b98-a547-249ab8f5c38a",
+                "username": "535dc740-67e6-41df-95ac-9cd4f89be463",
+                "password": "274kgjks5fi4u6ljp8u4p219bq",
+                "port": 5672,
+                "host": "10.160.246.95",
+                "hosts": [
+                  "10.160.246.95"
+                ],
+                "ssl": false,
+                "uri": "amqp://535dc740-67e6-41df-95ac-9cd4f89be463:274kgjks5fi4u6ljp8u4p219bq@10.160.246.95:5672/91393775-2784-4b98-a547-249ab8f5c38a",
+                "uris": [
+                  "amqp://535dc740-67e6-41df-95ac-9cd4f89be463:274kgjks5fi4u6ljp8u4p219bq@10.160.246.95:5672/91393775-2784-4b98-a547-249ab8f5c38a"
+                ]
+              },
+              "management": {
+                "path": "/api/",
+                "ssl": false,
+                "hosts": [
+                  "10.160.246.95"
+                ],
+                "password": "274kgjks5fi4u6ljp8u4p219bq",
+                "username": "535dc740-67e6-41df-95ac-9cd4f89be463",
+                "port": 15672,
+                "host": "10.160.246.95",
+                "uri": "http://535dc740-67e6-41df-95ac-9cd4f89be463:274kgjks5fi4u6ljp8u4p219bq@10.160.246.95:15672/api/",
+                "uris": [
+                  "http://535dc740-67e6-41df-95ac-9cd4f89be463:274kgjks5fi4u6ljp8u4p219bq@10.160.246.95:15672/api/"
+                ]
+              }
+            },
+            "username": "535dc740-67e6-41df-95ac-9cd4f89be463",
+            "hostname": "10.160.246.95",
+            "hostnames": [
+              "10.160.246.95"
+            ],
+            "vhost": "91393775-2784-4b98-a547-249ab8f5c38a",
+            "http_api_uri": "https://535dc740-67e6-41df-95ac-9cd4f89be463:274kgjks5fi4u6ljp8u4p219bq@pivotal-rabbitmq.sys.pcf1.vc1.pcf.dell.com/api/",
+            "uri": "amqp://535dc740-67e6-41df-95ac-9cd4f89be463:274kgjks5fi4u6ljp8u4p219bq@10.160.246.95/91393775-2784-4b98-a547-249ab8f5c38a",
+            "uris": [
+              "amqp://535dc740-67e6-41df-95ac-9cd4f89be463:274kgjks5fi4u6ljp8u4p219bq@10.160.246.95/91393775-2784-4b98-a547-249ab8f5c38a"
+            ]
+          },
+          "syslog_drain_url": null,
+          "volume_mounts": [],
+          "label": "p-rabbitmq",
+          "provider": null,
+          "plan": "standard",
+          "name": "NsbRabbitMQ",
+          "tags": [
+            "rabbitmq",
+            "messaging",
+            "message-queue",
+            "amqp",
+            "stomp",
+            "mqtt",
+            "pivotal"
+          ]
+        }
+      ]
+    }
+  },
+  "application_env_json": {
+    "VCAP_APPLICATION": {
+      "cf_api": "https://api.sys.pcf1.vc1.pcf.dell.com",
+      "limits": {
+        "fds": 16384
+      },
+      "application_name": "NsbEndpointConsole",
+      "application_uris": [],
+      "name": "NsbEndpointConsole",
+      "space_name": "Obaid",
+      "space_id": "d747e22b-a711-4909-9410-7555fb0e27bc",
+      "uris": [],
+      "users": null,
+      "application_id": "40475de3-e5f9-46e0-8774-56d5bf646085"
+    }
+  }
+}
