@@ -43,6 +43,7 @@ namespace Shared.Core
             var transport = endpointConfiguration.UseTransport<RabbitMQTransport>();
             transport.ConnectionString(connectionStr);
             transport.UseConventionalRoutingTopology();
+            //transport.UseRoutingTopology()
 
             var routing = transport.Routing();
 
